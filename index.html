@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed El-Sayer | موقعي الشخصي</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    color: white;
+    background:
+        linear-gradient(rgba(3,15,35,.78),rgba(3,15,35,.88)),
+        url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(3,15,35,.9);
+    z-index: 100;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    margin: 20px;
+}
+
+.hero h1 span,
+.section-title span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    color: #bae6fd;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 2;
+    color: #e2e8f0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    margin: 10px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #38bdf8;
+    transform: translateY(-4px);
+}
+
+.about, .projects {
+    background: rgba(5,20,40,.8);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 2.2;
+    color: #e2e8f0;
+    font-size: 17px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 22px;
+}
+
+.card {
+    padding: 28px;
+    background: rgba(10,35,65,.9);
+    border: 1px solid #164e75;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin: 12px 0;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.9;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.whatsapp {
+    background: #128c52;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #020a19;
+    color: #94a3b8;
+    line-height: 2;
+}
+
+footer span {
+    color: #38bdf8;
+}
+
+@media(max-width:650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    section {
+        padding: 75px 6%;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AHMED.DEV</div>
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من أنا</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#projects">مشاريعي</a>
+        <a href="#contact">تواصل معي</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>أنا <span>Ahmed El-Sayer</span></h1>
+        <h2>مبرمج ومهتم بعالم التكنولوجيا</h2>
+        <p>
+            أهلاً بك في موقعي الشخصي.
+            أنا أحمد، شغوف بالبرمجة والتكنولوجيا،
+            وأسعى لتطوير مهاراتي في تطوير المواقع
+            والذكاء الاصطناعي والروبوتات.
+        </p>
+        <a href="#projects" class="btn">اكتشف مشاريعي</a>
+        <a href="#contact" class="btn">تواصل معي</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">من <span>أنا؟</span></h2>
+    <div class="about-box">
+        أنا أحمد الصير، مهتم بالبرمجة والتكنولوجيا الحديثة.
+        أعمل على تطوير نفسي في مجال البرمجة وتطوير المواقع.
+        أحب التفكير الإبداعي وحل المشكلات.
+        أهتم بالذكاء الاصطناعي وعلوم البيانات والروبوتات.
+        هدفي أن أصبح مبرمجاً محترفاً وأصنع مشاريع تقنية مبتكرة.
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">مهاراتي <span>واهتماماتي</span></h2>
+    <div class="grid">
+        <div class="card">
+            <div class="icon">🐍</div>
+            <h3>Python</h3>
+            <p>تعلم البرمجة والتطبيقات وحل المشكلات.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>HTML</h3>
+            <p>بناء صفحات ومواقع الإنترنت.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>CSS</h3>
+            <p>تصميم واجهات جميلة ومتجاوبة.</p>
+        </div>
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>تعلم المواقع والتطبيقات التفاعلية.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🤖</div>
+            <h3>الذكاء الاصطناعي</h3>
+            <p>استكشاف الأنظمة الذكية وتعلم الآلة.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>الروبوتات</h3>
+            <p>الاهتمام بالروبوتات والإلكترونيات.</p>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="section-title">مشاريعي <span>البرمجية</span></h2>
+    <div class="grid">
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>موقعي الشخصي</h3>
+            <p>موقع تعريفي يعرض اهتماماتي ورحلتي في البرمجة.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🐍</div>
+            <h3>مشاريع Python</h3>
+            <p>التدرب على بناء تطبيقات ومشاريع برمجية.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>مشاريع مستقبلية</h3>
+            <p>أطمح لمشاريع في الذكاء الاصطناعي والروبوتات.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">تواصل <span>معي</span></h2>
+    <p>هل لديك فكرة أو ترغب في التواصل معي؟</p>
+    <a href="https://wa.me/201017974731"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn whatsapp">
+       📱 اضغط هنا للتواصل معي عبر واتساب
+    </a>
+</section>
+
+<footer>
+    <p>تصميم وتطوير <span>Ahmed El-Sayer</span></p>
+    <p>جميع الحقوق محفوظة © 2026</p>
+</footer>
+
+</body>
+</html>
